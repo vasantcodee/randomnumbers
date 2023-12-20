@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>randomnumbers</title>
+</head>
+<body>
+    <button onclick="displayMessage()">click here to get random number</button>
+    <div id="output"></div>
+
+    <script>
+        function displayMessage(){
+            const randomNumbers=[];
+
+            for(let i=1;i<100;i++){
+                randomNumbers.push(Math.floor(Math.random()*1000))
+                document.getElementById('output').innerText = randomNumbers.join('\n');
+
+            }
+        }
+    </script>
+</body>
+</html>
